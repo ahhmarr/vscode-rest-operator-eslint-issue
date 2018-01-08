@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "no-console": 0,
+    "key-spacing": [
+      "error",
+      {
+        "align": "colon"
+      }
+    ]
+  },
+  "parser": "babel-eslint",
+  "plugins": ["meteor"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:meteor/recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "globals": {
+    "Promise": true,
+    "console": true,
+    "Map": true,
+    "Set": true,
+    "require": true,
+    "window": true,
+    "confirm": true,
+    "process": true,
+    "document": true,
+    "SyncedCron": false
+  }
+}
